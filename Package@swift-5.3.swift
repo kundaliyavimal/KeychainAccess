@@ -22,6 +22,7 @@ let package = Package(
           name: "KeychainAccess",
           path: "Lib/KeychainAccess",
           exclude: ["Info.plist"],
+          resources: [.copy("Resources/PrivacyInfo.xcprivacy")],
           linkerSettings: [.unsafeFlags(["-Xlinker", "-no_application_extension"])]
         )
     ]
